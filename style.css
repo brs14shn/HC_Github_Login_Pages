@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root{
     --green:#2da44e;
     --dark:#24292f;
@@ -19,6 +19,7 @@ body{
     align-items: center;
     height: 100vh;
     width: 100%;
+    background-color: azure;
 }
 .container{
     display: flex;
@@ -27,7 +28,7 @@ body{
     flex-direction: column;
     width: 350px;
     height: 500px;
-    border: 1px solid red;
+   
 }
 .logo{
     margin-bottom: 20px;
@@ -50,11 +51,50 @@ a{
     margin-top: 2.5rem;
 }
 .input-box{
-    border: 1px solid brown;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 20px;
+}
+.input-label{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1rem;
+}
+input{
+    width: 100%;
+    outline: none;
+    margin-top: 5px;
+    font-size: 1rem;
+    padding: 4px 6px;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+}
+input:focus{
+    border: 1px solid blue;
+}
+.submit-btn{
+    width: 100%;
+    padding: 5px 0px;
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    color: var(--light);
+}
+.submit-btn:hover{
+    transform: translateY(-2px);
+}
+.info{
+    margin-top: 2rem;
+    font-size: 1rem;
+    background-color: var(--light);
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--bColor);
+    border-radius: 5px;
+    padding: 20px 15px;
+
 }
