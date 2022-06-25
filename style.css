@@ -1,6 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 :root{
     --green:#2da44e;
     --dark:#24292f;
     --light:#f6f8fa;
     --bColor:rgb(141,141,141);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    border: 1px solid red;
+}
+.logo{
+    margin-bottom: 20px;
+}
+.logo i{
+    font-size: 50px;
+}
+a{
+    text-decoration: none;
+}
+.github-head{
+    font-size: 1.7rem;
+}
+.login-container{
+    border: 1px solid var(--bColor);
+    width: 100%;
+    padding: 25px 15px;
+    border-radius:5px ;
+    background-color: var(--light);
+    margin-top: 2.5rem;
+}
+.input-box{
+    border: 1px solid brown;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
